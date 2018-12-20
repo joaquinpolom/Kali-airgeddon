@@ -10,10 +10,8 @@ RUN set -x \
     && apt-get -yqq dist-upgrade \
     && apt-get clean \
     && wget https://github.com/v1s1t0r1sh3r3/airgeddon/archive/master.zip \
-    && unzip master.zip
+    && unzip master.zip \
     && cd airgeddon-master
-
-
 
 
 CMD ["bash", "airgeddon.sh"]
